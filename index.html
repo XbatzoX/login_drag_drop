@@ -4,9 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/img/favicon_code.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
 </head>
 <body>
+    <div class="form-container">
+        <form onsubmit="login()">
+        <label for="login_mail">E-mail:</label>
+        <input class="bg-input" type="email" required id="login_mail">
+        <label for="login_pw">Password:</label>
+        <input class="bg-input" type="password" required id="login_pw">
+        <button>Login</button>
+    </form>
+    </div>
     
 </body>
 </html>

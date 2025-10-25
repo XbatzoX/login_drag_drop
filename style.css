@@ -1,0 +1,10 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    background-image:linear-gradient(to top right, rgb(51, 50, 50), rgb(28, 27, 27));
+}
+
+.bg-input{
+    background-color: rgb(77,81,86);
+}
