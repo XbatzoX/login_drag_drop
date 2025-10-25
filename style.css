@@ -3,8 +3,62 @@ body{
     box-sizing: border-box;
     min-height: 100vh;
     background-image:linear-gradient(to top right, rgb(51, 50, 50), rgb(28, 27, 27));
+    font-family: 'MyRaleway';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container{
+    width: 400px;
+    padding: 32px;
+    border: 2px solid rgb(66, 63, 200);
+    border-radius: 5px;
+}
+
+.img-container img{
+    width: 400px;
+    height: 150px;
+    object-fit: cover;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-bottom: 32px;
+    /* padding-bottom: 32px; */
+    opacity: 0.5;
 }
 
 .bg-input{
     background-color: rgb(77,81,86);
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.color-blue{
+    background-color: rgb(33,31,147);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+form label{
+    color: white;
+}
+
+form button{
+    cursor: pointer;
+    font-family: 'MyRaleway';
+    margin-top: 32px;
+    padding: 8px;
+    width: 100%;
+    background-color: rgb(58, 57, 57);
+    color: white;
+    border: 2px solid rgb(66, 63, 200);
+    border-radius: 5px;
+}
+
+form button:hover{
+    background-color: rgb(73, 72, 72);
 }
