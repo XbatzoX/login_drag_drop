@@ -5,6 +5,8 @@ body{
     background-image:linear-gradient(to top right, rgb(51, 50, 50), rgb(28, 27, 27));
     font-family: 'MyRaleway';
     display: flex;
+    flex-direction: column;
+    gap: 16px;
     justify-content: center;
     align-items: center;
 }
@@ -30,6 +32,7 @@ body{
 .bg-input{
     background-color: rgb(77,81,86);
     border: 1px solid grey;
+    color: white;
     border-radius: 5px;
 }
 
@@ -41,6 +44,7 @@ form{
     display: flex;
     flex-direction: column;
     gap: 8px;
+    margin-top: 16px;
 }
 
 form label{
@@ -62,3 +66,66 @@ form button{
 form button:hover{
     background-color: rgb(73, 72, 72);
 }
+
+.msg-box{
+    color: white;
+    width: 400px;
+    padding: 32px;
+    border: 2px solid rgb(66, 63, 200);
+    border-radius: 5px;
+}
+
+.info-text{
+    padding-left: 75px;
+}
+
+.actions-container{
+    padding-top: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.create-user-link{
+    text-decoration: none;
+    color: white;
+}
+
+.btn-action{
+    cursor: pointer;
+    background-color: rgb(58, 57, 57);
+    border: 2px solid rgb(66, 63, 200);
+    border-radius: 5px;
+    padding: 8px 16px;
+}
+
+.btn-action:hover{
+    background-color: rgb(73, 72, 72);
+}
+
+.visible{
+    display: block;
+}
+
+.invisible{
+    display: none;
+}
+
+.user-form-container{
+    width: 400px;
+    padding: 32px;
+    border: 2px solid rgb(66, 63, 200);
+    border-radius: 5px;
+}
+
+.user-container{
+    background-color: rgb(66, 63, 200);
+    padding-bottom: 0px;
+    opacity: 0.7;
+}
+
+.user-container img{
+    width: 400px;
+    height: 150px;
+    object-fit: cover;
+}
+

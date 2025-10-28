@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js"></script>
 </head>
-<body onload="init()">
-    <div class="form-container">
+<body>
+    <div class="form-container" id="form_container">
         <div class="img-container">
             <img src="./assets/img/woman_coding_face.jpg" alt="a face of a woman with coding look">
         </div>
 
-        <form onsubmit="login()">
+        <form onsubmit="login(); return false;">
             <label for="login_mail">E-mail:</label>
             <input class="bg-input" type="email" required id="login_mail">
             <label for="login_pw">Password:</label>
@@ -23,6 +23,17 @@
             <button>Login</button>
         </form>
     </div>
-    
+    <div class="msg-box invisible" id="msg_box">
+        <span class="info-text">Es wurde kein Benutzer gefunden.</span>
+        <div class="actions-container">
+            <div class="btn-action">
+                <a class="create-user-link" href="./html/createUser.html">Benutzer erstellen</a>
+            </div>
+            <div class="btn-action" onclick="tryAgain()">
+                <span>Erneut versuchen</span>
+            </div>
+        </div>
+
+    </div>
 </body>
 </html>

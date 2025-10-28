@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/img/favicon_code.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/fonts.css">
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js"></script>
+    <script src="../scripts/createUser.js"></script>
+    <title>Create User</title>
+</head>
+<body>
+    <div class="user-form-container" id="user_container">
+        <div class="user-container">
+            <img src="../assets/img/characters.png" alt="avatar characters">
+        </div>
+
+        <form onsubmit="createUser(); return false;">
+            <label for="create_mail">E-mail:</label>
+            <input class="bg-input" type="email" required id="create_mail">
+            <label for="create_pw">Password:</label>
+            <input class="bg-input" type="password" required id="create_pw">
+            <button>Create user</button>
+        </form>
+    </div>
+</body>
+</html>
